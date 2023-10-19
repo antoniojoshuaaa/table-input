@@ -1,0 +1,17 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+table, td, th {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0px 50px 0px 5px;
+    border-collapse: collapse;
+}
+
+footer {
+    margin-top: auto;
+    padding-bottom: 40px;
+}
