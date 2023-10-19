@@ -77,7 +77,7 @@ xml.onload = () => {
 xml.send();
 
 function parseCSV(csvData) {
-  var rows = csvData.split("\r\n");
+  var rows = csvData.split("\n");
 
   var headers = rows[0].split(",");
 
