@@ -6,10 +6,9 @@ xml.responseType = "text";
 
 xml.onload = () => {
   var csvData = xml.responseText;
-  console.log(csvData)
 
   var parsedData = parseCSV(csvData);
-
+  
   var table = document.createElement("table");
   // create table header
   var header = createHeader(parsedData);
@@ -95,6 +94,7 @@ function parseCSV(csvData) {
 
     parsedData.push(obj);
   }
+  console.log(parsedData)
 
   return parsedData;
 }
