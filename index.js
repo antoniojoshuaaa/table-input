@@ -1,11 +1,12 @@
-const req = new XMLHttpRequest();
+const xml = new XMLHttpRequest();
 
-req.open("GET", "Table_Input.csv", true);
+xml.open("GET", "Table_Input.csv", true);
 
-req.responseType = "text";
+xml.responseType = "text";
 
-req.onload = () => {
-  var csvData = req.responseText;
+xml.onload = () => {
+  var csvData = xml.responseText;
+  console.log(csvData)
 
   var parsedData = parseCSV(csvData);
 
@@ -74,7 +75,7 @@ req.onload = () => {
   charlieVal.innerHTML = parseInt(val1) * parseInt(val2)
 };
 
-req.send();
+xml.send();
 
 function parseCSV(csvData) {
   var rows = csvData.split("\r\n");
