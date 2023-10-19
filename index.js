@@ -1,6 +1,6 @@
 const req = new XMLHttpRequest();
 
-req.open("GET", "Table_Input.csv");
+req.open("GET", "Table_Input.csv", true);
 
 req.responseType = "text";
 
